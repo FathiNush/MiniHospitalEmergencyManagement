@@ -1,5 +1,9 @@
 package hospital;
 
+/**
+ * Represents a single completed treatment for a patient.
+ * These records are stored in a TreatmentStack (LIFO order).
+ */
 public class TreatmentRecord {
 
     private int patientId;
@@ -16,6 +20,9 @@ public class TreatmentRecord {
         this.doctorName = doctorName;
     }
 
+    /**
+     * Prints this treatment record's details to the console.
+     */
     public void displayRecord() {
 
         System.out.println("Patient ID: " + patientId);
